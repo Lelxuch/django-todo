@@ -1,5 +1,6 @@
 # django-todo
 Title: Assignment 1
+Student: Sanzhar Nakyp SE-2010
 
 Django todo application. User can authorize, create tasks, set complete or incomplete complete or incomplete.
 
