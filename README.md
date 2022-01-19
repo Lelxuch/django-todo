@@ -22,5 +22,3 @@ http://127.0.0.1:8000/ or http://localhost:8000/
 ### Examples
 
 ![image](https://user-images.githubusercontent.com/49027400/150159167-dee9488c-720d-401b-a7ea-78532083d353.png)
-![image](https://user-images.githubusercontent.com/49027400/150159571-5d27e69a-01c7-4701-ae5f-9ad8583b3545.png)
-
