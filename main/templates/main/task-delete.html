@@ -1,0 +1,15 @@
+{% extends 'main/main.html' %}
+{% block content %}
+    <div class="container">
+        <form method="POST" class="delete-form">
+            {% csrf_token %}
+            <div class="delete-confirmation-text">
+                Delete task "{{ task }}"?
+            </div>
+            <div class="delete-decision">
+                <input class="default-btn" type="submit" value="Yes">
+                <a class="default-link" href="{% url 'tasks-list' %}">No</a>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

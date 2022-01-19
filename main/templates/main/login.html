@@ -1,0 +1,19 @@
+{% extends 'main/main.html' %}
+{% block content %}
+    <div class="container">
+        <header>
+            <h2>Login</h2>
+        </header>
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="auth-log-reg-link">
+                <a class="default-link" href="{% url 'register' %}">Register</a>
+            </div>
+            <div class="form-submit">
+                <input class="default-btn h4-btn" type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,40 @@
+{% extends 'main/main.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <header>
+        <h2>ToDo</h2>
+        <a href="{% url 'logout' %}" class="default-link">Logout</a>
+    </header>
+
+    <div class="box">
+        <div class="add-task-row">
+            <a href="{% url 'add-task' %}" class="default-btn">Add task</a>
+        </div>
+        <div class="tasks-list">
+            {% for task in tasks %}
+                <div class="task-item">
+                    <div class="tasks-left">
+                        {% if task.completed %}
+                            <a href="" class="task-indicator indicator-complete"></a>
+                        {% else %}
+                            <a href="" class="task-indicator"></a>
+                        {% endif %}
+                        <div>{{ task.title }}</div>
+                    </div>
+                    <div class="tasks-buttons">
+                        <a href="{% url 'edit-task' task.id %}">
+                            <img src="{% static 'images/editing.png'%}">
+                        </a>
+                        <a href="{% url 'delete-task' task.id %}">
+                            <img src="{% static 'images/bin.png'%}">
+                        </a>
+                    </div>
+                </div>
+            {% empty %}
+                <h4 style="text-align: center">No items in list</h4>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+{% endblock content %}

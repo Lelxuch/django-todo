@@ -1,0 +1,16 @@
+{% extends 'main/main.html' %}
+{% block content %}
+    <div class="container">
+        <header>
+            <h2>Task</h2>
+        </header>
+
+        <form method="POST" class="form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-submit">
+                <input class="default-btn h4-btn" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+{% endblock content %}
