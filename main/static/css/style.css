@@ -7,6 +7,10 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: #fff;
+  margin: 0;
+  background-image: linear-gradient(180deg, #000000 0%, #2E0259 50%);;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5 {
@@ -37,9 +41,9 @@ a {
 .container{
   background: #0D0D0D;
   max-width: 650px;
-  margin: 150px auto 150px;
   border-radius: 15px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+  margin: 200px auto 200px;
+  background-image: linear-gradient(180deg, #481CA6 0%, #0D0D0D 30%);
 }
 
 .box {
@@ -80,7 +84,6 @@ header {
   align-items: center;
   padding: 0 50px;
   border-radius: 15px 15px 0 0;
-  background-image: linear-gradient(180deg, #481CA6, #0D0D0D);
 }
 
 /* Form */
